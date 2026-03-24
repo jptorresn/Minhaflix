@@ -1,0 +1,81 @@
+@charset "UTF-8";
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(37, 37, 37);
+}
+
+div.header {
+    display: flex;
+    align-items: center;
+    color: lightgrey;
+    padding: 10px 20px;
+    background-color: rgb(24, 24, 24);
+}
+
+div.logo-netflix img {
+    width: 120px;
+    height: 35px;
+}
+
+div.menu {
+    display: flex;
+    margin-left: 2rem;
+}
+
+div.menu a {
+    color: rgb(173, 173, 173);
+    text-decoration: none;
+    margin: 5px 10px;
+}
+
+div.menu a:hover {
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+    transition: color .3s;
+}
+
+main {
+    padding: 1rem;
+    background-color: rgb(37, 37, 37);
+    color: white;
+}
+
+section h2 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+div.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: rgba(255, 255, 255, 0);
+    gap: 1rem;
+    text-align: center;
+}
+
+div.cards h4 {
+    text-align: center;
+    text-transform: capitalize;
+}
+
+div.cards img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+}
+
+main img:hover {
+    border: 1px solid white;
+    box-shadow: 0px 0px 12px rgba(214, 214, 214, 0.329);
+    transition: box-shadow .3s, border .5s;
+}
+
